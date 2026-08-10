@@ -1,0 +1,7 @@
+# Insert dsh-auto-blame: cynical follow-up suggestion bubbles above the composer.
+# When a turn closes, the host asks an LLM for three pushy follow-up prompts and
+# projects them to the client, which renders them as click-to-send bubbles in
+# the composer dock. A click feeds the text to inputActions.setDraft + submit.
+- insert:
+    - id: dsh-auto-blame
+      name: '@dsh-external/dsh-auto-blame'
