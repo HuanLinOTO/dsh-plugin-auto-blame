@@ -10,6 +10,21 @@
 /** One cynical follow-up prompt the LLM produced for the just-closed turn. */
 export type BlameSuggestion = string
 
+/**
+ * The plugin's user-facing settings, persisted through the settings seam
+ * under the `auto-blame` namespace in `$DSH_HOME/settings.yaml`. The host
+ * reads `enabled` on every `agent/turn-stopping` and skips the LLM call
+ * entirely when false — no token cost, no projection event, no bubbles.
+ */
+export interface AutoBlameSettings {
+  /**
+   * Master switch. When false, the turn-stopping listener returns immediately
+   * without calling the LLM; the projection stays null and the bubbles never
+   * render. Defaults to true (a freshly installed plugin runs).
+   */
+  enabled: boolean
+}
+
 /** The payload of an `auto-blame/generating` session event (signals loading). */
 export interface AutoBlameGeneratingPayload {
   /** The turn the suggestions are being generated for. */

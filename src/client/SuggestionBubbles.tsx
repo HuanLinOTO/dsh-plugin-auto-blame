@@ -183,7 +183,9 @@ export function SuggestionBubbles({ useProjection, useInput, inputActions, t }: 
     document.head.appendChild(tag)
   }, [])
 
-  // No projection at all: capability absent or not yet started.
+  // No projection at all: capability absent, not yet started, or the host
+  // `enabled` flag is false (the turn-stopping listener skipped the LLM
+  // call entirely — no projection event, no bubbles).
   if (projection === undefined || projection === null) {
     return null
   }

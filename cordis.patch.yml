@@ -2,6 +2,13 @@
 # When a turn closes, the host asks an LLM for three pushy follow-up prompts and
 # projects them to the client, which renders them as click-to-send bubbles in
 # the composer dock. A click feeds the text to inputActions.setDraft + submit.
+#
+# The `enabled` master switch is the composition base (first-boot seed); user
+# edits live in $DSH_HOME/settings.yaml under the `auto-blame` namespace. The
+# host gates the turn-stopping LLM call on this flag — false means no token
+# cost, no projection event, no bubbles.
 - insert:
     - id: dsh-auto-blame
       name: '@dsh-external/dsh-auto-blame'
+      config:
+        enabled: true

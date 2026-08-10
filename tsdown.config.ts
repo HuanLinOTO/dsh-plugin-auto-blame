@@ -19,11 +19,16 @@ const ID = '@dsh-external/dsh-auto-blame'
 /** DSH platform modules that stay external in both bundles (peer deps). */
 const HOST_EXTERNALS = [
   'cordis',
+  'schemastery',
   '@deepseek-ai/dsh-agent',
   '@deepseek-ai/dsh-agent/types',
+  '@deepseek-ai/dsh-client-connection',
+  '@deepseek-ai/dsh-host-apiproxy',
+  '@deepseek-ai/dsh-host-apiproxy/api',
   '@deepseek-ai/dsh-llm',
   '@deepseek-ai/dsh-session',
   '@deepseek-ai/dsh-session-projection',
+  '@deepseek-ai/dsh-settings',
 ]
 
 /** DSH platform modules that stay external in the browser bundle. */
@@ -32,6 +37,8 @@ const CLIENT_EXTERNALS = [
   'react-dom',
   'react/jsx-runtime',
   'cordis',
+  '@deepseek-ai/dsh-client-connection',
+  '@deepseek-ai/dsh-client-connection/client',
   '@deepseek-ai/dsh-client-runtime',
   '@deepseek-ai/dsh-client-runtime/client',
   '@deepseek-ai/dsh-client-locale',
@@ -39,6 +46,8 @@ const CLIENT_EXTERNALS = [
   '@deepseek-ai/dsh-client-ui-slots',
   '@deepseek-ai/dsh-client-ui-conversation',
   '@deepseek-ai/dsh-client-ui-conversation/client',
+  '@deepseek-ai/dsh-client-ui-settings',
+  '@deepseek-ai/dsh-client-ui-settings/client',
   '@deepseek-ai/dsh-client-web-react',
 ]
 
