@@ -1,6 +1,8 @@
 # dsh-auto-blame
 
-当模型完成当前轮次对话后，将最后 3 条消息发送给 LLM，生成 3 条批判性跟进请求，显示在输入框上方作为可选项，点击直接发送。
+![preview](docs/preview.webp)
+
+当模型完成当前轮次对话后，将最后 3 条消息发送给 LLM，生成 3 条批判性跟进请求，显示在输入框上方作为可选项，点击直接发送。生成期间"领导视野"标签带 DeepSeek 蓝色流光扫过（同 Deep diving... 特效），建议到达后气泡依次淡入。
 
 ## 工作原理
 
@@ -25,7 +27,7 @@
 
 ```sh
 pnpm run typecheck    # tsc --noEmit
-pnpm test             # vitest run（22 个单测）
+pnpm test             # vitest run（28 个单测）
 pnpm run build        # tsc + tsdown → lib/index.js, lib/invariant.js, lib/client.js
 pnpm run bundle:client # 只构建 client bundle
 ```
