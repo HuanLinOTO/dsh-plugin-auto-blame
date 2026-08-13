@@ -51,7 +51,7 @@ New-Item -ItemType Directory -Path $dest -Force
 dsh plugin --profile web add "link:D:/Projects/deepseek-harness/dsh-auto-blame"
 
 # 远端引用（预构建策略，github: 安装开箱即用）
-dsh plugin --profile web add "github:dsh-external/dsh-auto-blame"
+dsh plugin --profile web add "github:huanlinoto/dsh-plugin-auto-blame"
 ```
 
 安装后重启 `dsh web` + 浏览器硬刷新（`Ctrl+Shift+R`）。

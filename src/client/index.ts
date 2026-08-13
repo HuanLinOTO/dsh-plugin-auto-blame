@@ -17,7 +17,7 @@
  * A click feeds the suggestion text to the input machine — the same path the
  * InputBar uses: `inputActions.setDraft(text)` then `inputActions.submit()`.
  *
- * @module @dsh-external/dsh-auto-blame/client
+ * @module @huanlin/dsh-plugin-auto-blame/client
  */
 
 import type { ClientContext } from '@deepseek-ai/dsh-client-runtime/client'

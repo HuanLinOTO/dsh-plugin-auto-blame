@@ -14,7 +14,7 @@
  * The click is ignored while the input machine is not in the `plain` phase
  * (e.g. while a turn is streaming) to avoid clobbering an in-flight submit.
  *
- * @module @dsh-external/dsh-auto-blame/client/SuggestionBubbles
+ * @module @huanlin/dsh-plugin-auto-blame/client/SuggestionBubbles
  */
 
 import { useEffect, useState, type CSSProperties } from 'react'

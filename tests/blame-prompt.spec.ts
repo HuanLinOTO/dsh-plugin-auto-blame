@@ -5,7 +5,7 @@
  * have no runtime dependencies on DSH platform packages. The LLM call path
  * (src/blame-llm.ts) is covered by integration tests.
  *
- * @module @dsh-external/dsh-auto-blame/tests/blame-prompt.spec
+ * @module @huanlin/dsh-plugin-auto-blame/tests/blame-prompt.spec
  */
 import { describe, expect, it } from 'vitest'
 import type { Message } from '@deepseek-ai/dsh-llm'

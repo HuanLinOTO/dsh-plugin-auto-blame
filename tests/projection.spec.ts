@@ -1,7 +1,7 @@
 /**
  * Unit tests for the `autoBlame` projection fold.
  *
- * @module @dsh-external/dsh-auto-blame/tests/projection.spec
+ * @module @huanlin/dsh-plugin-auto-blame/tests/projection.spec
  */
 import { describe, expect, it } from 'vitest'
 import type { SessionEvent } from '@deepseek-ai/dsh-session'

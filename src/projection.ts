@@ -5,10 +5,10 @@
  * with the suggestions array once results land. `null` before the first
  * generation and cleared on `turn/start`.
  *
- * @module @dsh-external/dsh-auto-blame/projection
+ * @module @huanlin/dsh-plugin-auto-blame/projection
  */
 
-import type { Context } from 'cordis'
+import type { Context } from '@deepseek-ai/cordis'
 import type {} from '@deepseek-ai/dsh-session-projection'
 import type { SessionEvent } from '@deepseek-ai/dsh-session'
 import type { AutoBlameProjection, AutoBlameGeneratingPayload, AutoBlameSuggestionsPayload } from './types.ts'

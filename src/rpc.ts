@@ -12,10 +12,10 @@
  * code with a descriptive message (the RpcError code union is closed; we do
  * not extend it for plugin-specific failures).
  *
- * @module @dsh-external/dsh-auto-blame/rpc
+ * @module @huanlin/dsh-plugin-auto-blame/rpc
  */
 
-import type { Context } from 'cordis'
+import type { Context } from '@deepseek-ai/cordis'
 // Type-only: pulls `declare module 'cordis'` merge for `ctx.connection`.
 import type {} from '@deepseek-ai/dsh-client-connection'
 import type { RpcResult } from '@deepseek-ai/dsh-host-apiproxy/api'

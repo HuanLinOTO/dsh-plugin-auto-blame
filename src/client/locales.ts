@@ -1,7 +1,7 @@
 /**
  * Locale dictionaries for the `dsh-auto-blame` namespace.
  *
- * @module @dsh-external/dsh-auto-blame/client/locales
+ * @module @huanlin/dsh-plugin-auto-blame/client/locales
  */
 
 /** The locale keys the bubbles component + settings page read. */

@@ -5,7 +5,7 @@
  * they take plain data and return plain data. The host-side LLM call lives
  * in {@link ./blame-llm.ts}, which imports the DSH LLM and session seams.
  *
- * @module @dsh-external/dsh-auto-blame/blame-prompt
+ * @module @huanlin/dsh-plugin-auto-blame/blame-prompt
  */
 
 import type { Message } from '@deepseek-ai/dsh-llm'

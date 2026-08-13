@@ -7,18 +7,19 @@
  *                            `window.__ModuleLoader__.load({id, factory})`
  *                            so the client module loader can compose it)
  *
- * The browser bundle externals React and the DSH platform modules (cordis,
- * @deepseek-ai/dsh-client-*) — the loader's module table provides them at
- * runtime. No CSS-modules pipeline: the bubbles use inline styles, so the
- * client bundle stays self-contained without a CSS plugin.
+ * The browser bundle externals React and the DSH platform modules
+ * (@deepseek-ai/cordis, @deepseek-ai/dsh-client-*) — the loader's module
+ * table provides them at runtime. No CSS-modules pipeline: the bubbles use
+ * inline styles, so the client bundle stays self-contained without a CSS
+ * plugin.
  */
 import { defineConfig, type UserConfig } from 'tsdown'
 
-const ID = '@dsh-external/dsh-auto-blame'
+const ID = '@huanlin/dsh-plugin-auto-blame'
 
 /** DSH platform modules that stay external in both bundles (peer deps). */
 const HOST_EXTERNALS = [
-  'cordis',
+  '@deepseek-ai/cordis',
   'schemastery',
   '@deepseek-ai/dsh-agent',
   '@deepseek-ai/dsh-agent/types',
@@ -36,7 +37,7 @@ const CLIENT_EXTERNALS = [
   'react',
   'react-dom',
   'react/jsx-runtime',
-  'cordis',
+  '@deepseek-ai/cordis',
   '@deepseek-ai/dsh-client-connection',
   '@deepseek-ai/dsh-client-connection/client',
   '@deepseek-ai/dsh-client-runtime',

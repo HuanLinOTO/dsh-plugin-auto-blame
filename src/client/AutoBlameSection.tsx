@@ -14,7 +14,7 @@
  * entirely when false — no token cost, no projection event, no bubbles.
  * This is a true host-side gate, not a client-side hide.
  *
- * @module @dsh-external/dsh-auto-blame/client/AutoBlameSection
+ * @module @huanlin/dsh-plugin-auto-blame/client/AutoBlameSection
  */
 
 import { useEffect, useState, type CSSProperties } from 'react'

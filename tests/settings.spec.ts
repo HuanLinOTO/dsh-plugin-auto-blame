@@ -8,7 +8,7 @@
  * that `getEnabled`/`setEnabled` expose) is tested by driving the same
  * closure the host apply wires.
  *
- * @module @dsh-external/dsh-auto-blame/tests/settings.spec
+ * @module @huanlin/dsh-plugin-auto-blame/tests/settings.spec
  */
 import { describe, expect, it, vi } from 'vitest'
 import type { RpcResult } from '@deepseek-ai/dsh-host-apiproxy/api'

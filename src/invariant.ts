@@ -1,14 +1,14 @@
 /**
- * Package-owned invariant companion for `@dsh-external/dsh-auto-blame`.
+ * Package-owned invariant companion for `@huanlin/dsh-plugin-auto-blame`.
  *
- * @module @dsh-external/dsh-auto-blame/invariant
+ * @module @huanlin/dsh-plugin-auto-blame/invariant
  */
 
 /* jscpd:ignore-start */
-import type { Context } from 'cordis'
+import type { Context } from '@deepseek-ai/cordis'
 import type { InvariantInstaller } from '@deepseek-ai/dsh-invariants'
 
-const PACKAGE_NAME = '@dsh-external/dsh-auto-blame'
+const PACKAGE_NAME = '@huanlin/dsh-plugin-auto-blame'
 
 /** Cordis companion plugin name. */
 export const name = 'dsh-auto-blame-invariant'

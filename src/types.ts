@@ -4,7 +4,7 @@
  * and the `autoBlame` projection-key declaration, free of this package's
  * host-side value imports.
  *
- * @module @dsh-external/dsh-auto-blame/types
+ * @module @huanlin/dsh-plugin-auto-blame/types
  */
 
 /** One cynical follow-up prompt the LLM produced for the just-closed turn. */

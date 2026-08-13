@@ -9,6 +9,6 @@
 # cost, no projection event, no bubbles.
 - insert:
     - id: dsh-auto-blame
-      name: '@dsh-external/dsh-auto-blame'
+      name: '@huanlin/dsh-plugin-auto-blame'
       config:
         enabled: true

@@ -6,11 +6,11 @@
  * prompt/parsing functions live in {@link ./blame-prompt.ts} so they can be
  * unit-tested without resolving the DSH workspace packages.
  *
- * @module @dsh-external/dsh-auto-blame/blame-llm
+ * @module @huanlin/dsh-plugin-auto-blame/blame-llm
  */
 
-import type { Context } from 'cordis'
-import type { LlmService, GenerateOptions, Message, ReasoningEffortId, StreamChunk } from '@deepseek-ai/dsh-llm'
+import type { Context } from '@deepseek-ai/cordis'
+import type { LlmRuntime, GenerateOptions, Message, ReasoningEffortId, StreamChunk } from '@deepseek-ai/dsh-llm'
 import type { Session, SessionEvent } from '@deepseek-ai/dsh-session'
 import type { Agent } from '@deepseek-ai/dsh-agent'
 import type { BlameSuggestion } from './types.ts'
@@ -162,7 +162,7 @@ export async function generateBlameSuggestions(
   ctx: Context,
   agent: Agent,
 ): Promise<BlameSuggestion[] | null> {
-  const llm = ctx.get('llm') as LlmService | undefined
+  const llm = ctx.get('llm') as LlmRuntime | undefined
   if (llm === undefined) return null
   const provider = agent.options.provider
   const model = agent.options.model

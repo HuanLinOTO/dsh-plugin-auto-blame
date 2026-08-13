@@ -30,10 +30,10 @@
  * assemblies without a settings provider fall back to in-memory state
  * (cordis.yml seed only, no persistence).
  *
- * @module @dsh-external/dsh-auto-blame
+ * @module @huanlin/dsh-plugin-auto-blame
  */
 
-import type { Context } from 'cordis'
+import type { Context } from '@deepseek-ai/cordis'
 import z from 'schemastery'
 import { settingsNamespace, type SettingsScope } from '@deepseek-ai/dsh-settings'
 // Type-only: pulls `declare module 'cordis'` merge for `ctx.connection`.
