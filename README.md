@@ -2,6 +2,8 @@
 
 # dsh-auto-blame
 
+[![npm version](https://img.shields.io/npm/v/@huanlin/dsh-plugin-auto-blame)](https://www.npmjs.com/package/@huanlin/dsh-plugin-auto-blame)
+
 ![preview](docs/preview.webp)
 
 当模型完成当前轮次对话后，将最后 3 条消息发送给 LLM，生成 3 条批判性跟进请求，显示在输入框上方作为可选项，点击直接发送。生成期间"领导视野"标签带 DeepSeek 蓝色流光扫过（同 Deep diving... 特效），建议到达后气泡依次淡入。
@@ -49,11 +51,11 @@ New-Item -ItemType Directory -Path $dest -Force
 ## 运行
 
 ```sh
+# 从 npm 安装（推荐）
+dsh plugin --profile web add @huanlin/dsh-plugin-auto-blame
+
 # 本地开发（热更新）
 dsh plugin --profile web add "link:D:/Projects/deepseek-harness/dsh-auto-blame"
-
-# 远端引用（预构建策略，github: 安装开箱即用）
-dsh plugin --profile web add "github:huanlinoto/dsh-plugin-auto-blame"
 ```
 
 安装后重启 `dsh web` + 浏览器硬刷新（`Ctrl+Shift+R`）。
