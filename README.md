@@ -1,3 +1,5 @@
+本项目已被dshfind.com收录
+
 # dsh-auto-blame
 
 ![preview](docs/preview.webp)
